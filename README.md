@@ -28,7 +28,7 @@ The analysis demonstrates practical SQL skills including **database creation, da
 
 
 
-## 🗄️ Database Tables
+##  Database Tables
 
 The project uses the following tables:
 
