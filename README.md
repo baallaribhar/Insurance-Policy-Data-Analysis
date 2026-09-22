@@ -74,7 +74,38 @@ Contains information related to policy payments and payment history.
 
 Contains additional insurance-related attributes used for analysis.
 
+### 6. Data Cleaning & Preparation
 
+During the data import process, several data-quality issues were handled.
+
+-Issues addressed
+
+-Imported CSV datasets into MySQL tables.
+
+-Handled missing/NULL values.
+
+-Ensured nullable fields could accept missing values.
+
+-Addressed blank Settlement_Date values in the Claims table.
+
+-Converted empty string values into SQL NULL.
+
+-Managed date fields during import.
+
+-Used TRUNCATE and re-import where required.
+
+-Checked imported row counts.
+
+-Validated relationships between Customer_ID and policy records.
+
+
+-Example of converting blank settlement dates to NULL:
+
+UPDATE Claims
+
+SET Settlement_Date = NULL
+
+WHERE TRIM(Settlement_Date) = ' ';
 
 ### Table Relationships
 
@@ -87,7 +118,7 @@ Policy_Details.Customer_ID
 
 
 
-### SQL queries
+SQL Queries
 
 create table claims (
 Claim_ID varchar (20) primary key,
