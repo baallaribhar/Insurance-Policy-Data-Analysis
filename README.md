@@ -6,7 +6,7 @@
 
 This project focuses on analyzing insurance data using **MySQL** to answer key business questions related to customers, policies, premiums, policy status, demographics, and policy trends.
 
-The project involved creating relational database tables, importing and cleaning insurance datasets, establishing relationships between tables using `Customer_ID`, and writing SQL queries to generate business insights.
+The project involved creating relational database tables, importing and cleaning insurance datasets, establishing relationships between tables using Customer_ID, and writing SQL queries to generate business insights.
 
 The analysis demonstrates practical SQL skills including **database creation, data importing, data cleaning, joins, aggregations, conditional logic, subqueries, CTEs, window functions, and trend analysis**.
 
